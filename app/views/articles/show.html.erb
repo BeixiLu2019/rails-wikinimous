@@ -1,0 +1,12 @@
+<h2>About this article</h2>
+<h3>
+  <%= @article.title %>
+  <%= link_to '✏️', edit_article_path %>
+  <%= link_to article_path, method: :delete do %>
+  <%= '🗑' %>
+  <% end %>
+</h3>
+<p><%= @article.content %></p>
+
+<%= link_to "back to all articles", articles_path %>
+
